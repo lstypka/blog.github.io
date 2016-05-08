@@ -32,7 +32,7 @@ Tags: <br />
 {% assign sortedtags = tags | split:' ' | sort %}
 
 {% for tag in sortedtags %}
-		<a href="http://lstypka.github.io/blog.lstypka.github.io/tag/#{{ tag }}" style="border: 0px"><span class="tag">{{ tag }}</span></a>
+		<a href="/tag/#{{ tag }}" style="border: 0px"><span class="tag">{{ tag }}</span></a>
 {% endfor %}
 </div>
   </header>
