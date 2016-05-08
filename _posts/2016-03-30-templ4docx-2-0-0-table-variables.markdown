@@ -3,7 +3,7 @@ layout: post
 title:  "Templ4docx 2.0.0 - Table Variables"
 date:   2016-03-30 16:26
 categories: java
-tags: java templ4docx docx apache-poi
+tags: ["java", "templ4docx", "docx", "apache-poi"]
 author: Łukasz Stypka
 ---
 In this post I would like to spend some time on Table Variables. The TableVariable is perfect solution when you have n-records of the same variable. Lets consider the following case: we have docx document with table which consists of four columns: Name, Age, Image and list of languages. Our goal is fill the table with students' data. For this purpose I've created the following docx template:
