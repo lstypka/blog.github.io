@@ -1,0 +1,22 @@
+title: Łukasz Stypka - Blog
+description: >
+  I am very glad that you visit my blog. Do not hesitate to write comments and any feedback which allow me to improve my page & blog
+copyright: Łukasz Stypka 
+sass:
+  sass_dir: assets/sass
+  style: compressed
+url: https://raw.githubusercontent.com/lstypka/blog.lstypka.github.io/gh-pages
+linkedin_username: "lstypka"
+github_username:  "lstypka"
+feed_icon: rss
+email: "lukasz.stypka@gmail.com"
+gems: [jekyll-paginate]
+paginate_path: "/page/:num/"
+paginate: 5
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]

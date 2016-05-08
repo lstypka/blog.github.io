@@ -1,0 +1,38 @@
+<!-- Header -->
+  <header id="header" class="left_panel">
+    <a href="https://github.com/lstypka" class="image avatar"><img src="https://avatars1.githubusercontent.com/u/1587788" alt="" /></a>
+	<h2>Łukasz Stypka</h2>
+	<ul class="icons">
+     
+      {% if site.linkedin_username %}
+      <li><a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+      {% endif %}
+
+      {% if site.github_username %}
+      <li><a href="https://github.com/{{ site.github_username }}" class="icon fa-github"><span class="label">Github</span></a></li>
+      {% endif %}
+      {% if site.email %}
+      <li><a href="mailto:{{ site.email }}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      {% endif %}
+      {% if site.feed_icon %}
+      <li><a href="{{ site.github.url }}/{{ site.feed_icon }}.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      {% endif %}
+    </ul>
+
+	<span class="description">{{ site.description}}</span>
+
+
+<div class="tags">
+Tags: <br />
+{% capture tags %}
+  {% for tag in site.tags %}
+    {{ tag[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+		<a href="http://lstypka.github.io/blog.lstypka.github.io/tag/#{{ tag }}" style="border: 0px"><span class="tag">{{ tag }}</span></a>
+{% endfor %}
+</div>
+  </header>
