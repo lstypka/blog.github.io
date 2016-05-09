@@ -60,21 +60,18 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 16pt;
+		font-size: _font(font-size);
 		font-weight: _font(weight);
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
-		color: _palette(accent1, bg);
+		color: #1f1815;
 		text-decoration: none;
 
 		&:hover {
-			border-bottom-color: transparent;
-			color: _palette(accent1, bg) !important;
-			text-decoration: none;
+		    font-weight: bold;
 		}
 	}
 
@@ -92,13 +89,13 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: _palette(fg);
 		font-weight: _font(weight-bold);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 		a {
-			color: inherit;
+			color: #1f1815;
 			text-decoration: none;
 		}
 	}
@@ -210,13 +207,12 @@
 
 	header {
 		p {
-			color: _palette(fg-light);
+			color: _palette(fg);
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 		}
 
 		h2 + p {
-			font-size: 1.25em;
 			margin-top: (_size(element-margin) * -0.5);
 			line-height: 1.5em;
 		}
@@ -696,7 +692,7 @@
 				}
 
 				a {
-					color: inherit;
+					color: #1f1815;
 				}
 
 				h3 {
@@ -950,7 +946,7 @@
 			margin: (_size(element-margin) * 0.5) 0 0 0;
 
 			a {
-				color: _palette(accent2, fg-light);
+				color: #1f1815;
 			}
 		}
 
@@ -976,7 +972,7 @@
 				}
 
 				a {
-					color: inherit;
+					color: #1f1815;
 				}
 			}
 		}

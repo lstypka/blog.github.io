@@ -72,14 +72,14 @@ s.setAttribute('data-timestamp', +new Date());
           {% if page.previous.url %}
           <p>Previous</p>
   				<h3><a href="{{ page.previous.url }}">{{page.previous.title}}</a></h3>
-  				<p>{{ page.previous.excerpt | strip_html }}</p>
+  				<p>{{ page.previous.excerpt | strip_html | truncatewords: 50 }}</p>
           {% endif %}
   			</article>
   			<article class="6u$ 12u$(xsmall) work-item">
           {% if page.next.url %}
           <p>Next</p>
   				<h3><a href="{{ page.next.url }}">{{page.next.title}}</a></h3>
-  				<p>{{ page.next.excerpt | strip_html }}</p>
+  				<p>{{ page.next.excerpt | strip_html | truncatewords: 50 }}</p>
           {% endif %}
   			</article>
       </div>
